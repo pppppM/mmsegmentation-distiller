@@ -6,7 +6,7 @@ This project is based on mmsegmentation(v-0.11.0), all the usage is the same as 
 
 
 
-- [x] [Channel-wise Distillation for Semantic Segmentation](https://github.com/pppppM/mmsegmentation-distiller/tree/master/configs/distillers/cwd)
+- [x] [Channel-wise Distillation for Semantic Segmentation](https://github.com/pppppM/mmsegmentation-distiller/tree/master/configs/distiller/cwd)
 - [ ] [Structured Knowledge Distillation for Semantic Segmentation](https://arxiv.org/abs/1903.04197)
 
 
