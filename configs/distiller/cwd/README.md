@@ -15,7 +15,7 @@ We provide the config files for CWD: [Channel-wise Distillation for Semantic Seg
 
 ## Results and Models
 
-| | Backbone | Detector | Lr schd | box AP | Config | Download |
+| | Backbone | Detector | Lr schd | mIoU | Config | Download |
 |:------:|:------:|:--------:|:-------:|:------:|:------:|:------:| 
 
 <!-- | Teacher | X-101-64x4d-FPN | RetinaNet  |2x | 40.8 | [config](https://github.com/open-mmlab/mmdetection/tree/master/configs/retinanet/retinanet_x101_64x4d_fpn_2x_coco.py) |[model](http://download.openmmlab.com/mmdetection/v2.0/retinanet/retinanet_x101_64x4d_fpn_2x_coco/retinanet_x101_64x4d_fpn_2x_coco_20200131-bca068ab.pth) &#124; [log](http://download.openmmlab.com/mmdetection/v2.0/retinanet/retinanet_x101_64x4d_fpn_2x_coco/retinanet_x101_64x4d_fpn_2x_coco_20200131_114833.log.json) | 
