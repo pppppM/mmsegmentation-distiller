@@ -13,6 +13,7 @@ from mmseg import __version__
 from mmseg.apis import set_random_seed, train_segmentor
 from mmseg.datasets import build_dataset
 from mmseg.models import build_segmentor
+from mmseg.distillation import build_distiller
 from mmseg.utils import collect_env, get_root_logger
 
 
@@ -127,10 +128,19 @@ def main():
     meta['seed'] = args.seed
     meta['exp_name'] = osp.basename(args.config)
 
-    model = build_segmentor(
-        cfg.model,
-        train_cfg=cfg.get('train_cfg'),
-        test_cfg=cfg.get('test_cfg'))
+    distiller_cfg = cfg.get('distiller',None)
+    if distiller_cfg is None:
+        model = build_segmentor(
+            cfg.model,
+            train_cfg=cfg.get('train_cfg'),
+            test_cfg=cfg.get('test_cfg'))
+    else:
+        teacher_cfg = Config.fromfile(cfg.teacher_cfg)
+        student_cfg = Config.fromfile(cfg.student_cfg)
+        
+        model = build_distiller(cfg.distiller,teacher_cfg,student_cfg,
+         train_cfg=student_cfg.get('train_cfg'), 
+         test_cfg=student_cfg.get('test_cfg'))
 
     logger.info(model)
 
