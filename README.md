@@ -15,7 +15,7 @@ This project is based on mmsegmentation(v-0.11.0), all the usage is the same as 
 
 * Set up a new conda environment: `conda create -n distiller python=3.7`
 
-* Install pytorch
+* Install pytorch 1.3+
 
 * [Install mmcv ( 1.2.4 <= mmcv-full < 1.3 )](https://github.com/open-mmlab/mmcv#installation)
 
