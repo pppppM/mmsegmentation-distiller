@@ -198,10 +198,10 @@ class SegmentationDistiller(BaseSegmentor):
             Tensor: The output segmentation map.
         """
 
-        assert self.test_cfg.mode in ['slide', 'whole']
+        assert self.student.test_cfg.mode in ['slide', 'whole']
         ori_shape = img_meta[0]['ori_shape']
         assert all(_['ori_shape'] == ori_shape for _ in img_meta)
-        if self.test_cfg.mode == 'slide':
+        if self.student.test_cfg.mode == 'slide':
             seg_logit = self.slide_inference(img, img_meta, rescale)
         else:
             seg_logit = self.whole_inference(img, img_meta, rescale)
