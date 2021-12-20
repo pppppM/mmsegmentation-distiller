@@ -2,7 +2,7 @@
 ### The repo will be deprecated !!!!!
 
 ### If you want to distill model in OpenMMLab related repos, could join the wechat group!!
-<img src="https://github.com/pppppM/mmsegmentation-distiller/blob/master/WechatIMG40.jpeg" width="150" height="200" ><br/>
+<img src="https://github.com/pppppM/mmsegmentation-distiller/blob/master/WechatIMG42.jpeg" width="150" height="200" ><br/>
 
 
 This project is based on mmsegmentation(v-0.11.0), all the usage is the same as [mmsegmentation](https://mmsegmentation.readthedocs.io/en/latest/) including training , test and so on.
